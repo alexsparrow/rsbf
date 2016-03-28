@@ -40,7 +40,7 @@ Pointer :   ^
 >++.                    And finally a newline from Cell #6";
 
     let mut state = rsbf::initial_state();
-    let mut vec = Vec::new();
+    let vec = Vec::new();
     let mut cursor = Cursor::new(vec);
 
     rsbf::interpret(code, &mut state, &mut cursor);

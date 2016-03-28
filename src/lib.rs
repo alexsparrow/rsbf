@@ -38,7 +38,7 @@ fn right(state: &mut State) {
 }
 
 fn output(state: &mut State, write: &mut Write) {
-    write.write(&[state.mem[state.cell]]);
+    write.write(&[state.mem[state.cell]]).unwrap();
     state.pc += 1;
 }
 
